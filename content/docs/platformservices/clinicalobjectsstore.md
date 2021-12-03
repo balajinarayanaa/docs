@@ -3,99 +3,78 @@ title: Clinical Object Store
 sort_rank: 1
 ---
 
-# Metric types
+# Philips Dicom Store
 
-The Prometheus client libraries offer four core metric types. These are
-currently only differentiated in the client libraries (to enable APIs tailored
-to the usage of the specific types) and in the wire protocol. The Prometheus
-server does not yet make use of the type information and flattens all data into
-untyped time series. This may change in the future.
+DICOM Store allows you to:
 
-## Counter
+* Achieve portability and flexibility when accessing DICOM Studies
+* Employ a scalable solution
+* Avoid data loss with robust disaster recovery and backup solution
+* Engage in rigorous analysis to derive intelligent outcomes
 
-A _counter_ is a cumulative metric that represents a single [monotonically 
-increasing counter](https://en.wikipedia.org/wiki/Monotonic_function) whose
-value can only increase or be reset to zero on restart. For example, you can
-use a counter to represent the number of requests served, tasks completed, or
-errors.
+DICOM Store is a key enabler for solutions and applications that use DICOM imaging data such as:
 
-Do not use a counter to expose a value that can decrease. For example, do not
-use a counter for the number of currently running processes; instead use a gauge.
+* Cloud-enabled workflows
+* Bi-directional connectivity to existing on-premise DICOM systems
+* Basic and advanced viewing applications
+* Image analytics in the cloud
+* Integrate with Hospital EMR systems for acces to patient data
 
-Client library usage documentation for counters:
+**Philips DICOM Store service, part of Philips HealthSuite digital platform (HSDP), provides a secure, scalable, and interoperable cloud-based multi-tenant DICOM storage infrastructure. The service is supported with a standardsbased API OAuth2 and DICOM webTM, or classic DICOM which developers can use to build client applications and system integrations. This versatile store/query/retrieve solution expands access to imaging studies for an improved workflow experience.**
 
-   * [Go](http://godoc.org/github.com/prometheus/client_golang/prometheus#Counter)
-   * [Java](https://github.com/prometheus/client_java#counter)
-   * [Python](https://github.com/prometheus/client_python#counter)
-   * [Ruby](https://github.com/prometheus/client_ruby#counter)
+## Multifaceted functionality
 
-## Gauge
+DICOM Store is seamlessly integrated with HSDP’s Identity and Access Management (IAM), Clinical Data Repository (CDR), and Auditing and Logging Services to enable secure and compliant clinical workflows.
+IAM provides DICOM Store with secure, centralized mechanisms to manage users, services and devices.
+The cloud based program features practical and configurable protection capabilities, such as policy-based authentication and authorization, and role-based access control.
+Unique metadata is part of every DICOM image and is used to process and manage that image. While the image itself is stored in DICOM Store, the metadata is parsed and registered to the CDR. The registration within the CDR creates a longitudinal view of the Patient Records along with imaging. Multi-tenancy capabilities within CDR assures that the data from different organizations is stored separately and securely with user authorization
 
-A _gauge_ is a metric that represents a single numerical value that can
-arbitrarily go up and down.
+## Access control
 
-Gauges are typically used for measured values like temperatures or current
-memory usage, but also "counts" that can go up and down, like the number of
-concurrent requests.
+DICOM Store integrates with Authorize, an IAM capability to provide Organization-Based Access Control (OBAC). Access to the DICOM Study is protected by a set of access control permissions that allow access based on the role of the logged-in user.
 
-Client library usage documentation for gauges:
+## Integrated auditing, logging and monitoring
 
-   * [Go](http://godoc.org/github.com/prometheus/client_golang/prometheus#Gauge)
-   * [Java](https://github.com/prometheus/client_java#gauge)
-   * [Python](https://github.com/prometheus/client_python#gauge)
-   * [Ruby](https://github.com/prometheus/client_ruby#gauge)
+Host Auditing & Logging provides centralized management for oversight of event activity, system performance, and bugs/errors. Monitoring services display (via a dashboard) the rate at which the service is run – the number of times the system is queried, the number of times an image is retrieved, and more.
 
-## Histogram
+## DICOM Transactions
 
-A _histogram_ samples observations (usually things like request durations or
-response sizes) and counts them in configurable buckets. It also provides a sum
-of all observed values.
+The DICOM Store service supports RESTful web services specified in the DICOM PS3.18 - Web Services standard (commonly referred to as DICOMWeb) and classic services
+specified in the DICOM PS3.4 - Service Class Specifications.
+The supported transactions/services are:
 
-A histogram with a base metric name of `<basename>` exposes multiple time series
-during a scrape:
+* Store Transaction - Store DICOM objects (STOW-RS) / C-Store
+* Search Transaction - Search for DICOM objects (QIDO-RS) / C-Find
+* Retrieve Transaction - Retrieve DICOM objects (WADO-RS) / C-Move
 
-  * cumulative counters for the observation buckets, exposed as `<basename>_bucket{le="<upper inclusive bound>"}`
-  * the **total sum** of all observed values, exposed as `<basename>_sum`
-  * the **count** of events that have been observed, exposed as `<basename>_count` (identical to `<basename>_bucket{le="+Inf"}` above)
+DICOM Store also provides
 
-Use the
-[`histogram_quantile()` function](/docs/prometheus/latest/querying/functions/#histogram_quantile)
-to calculate quantiles from histograms or even aggregations of histograms. A
-histogram is also suitable to calculate an
-[Apdex score](http://en.wikipedia.org/wiki/Apdex). When operating on buckets,
-remember that the histogram is
-[cumulative](https://en.wikipedia.org/wiki/Histogram#Cumulative_histogram). See
-[histograms and summaries](/docs/practices/histograms) for details of histogram
-usage and differences to [summaries](#summary).
+* Centralized Configuration for managing the Cloud & Gateway services
+* Delete and Merge services to enable data management
+* Import and Export services to enable data routing
 
-Client library usage documentation for histograms:
+## Connectivity options
 
-   * [Go](http://godoc.org/github.com/prometheus/client_golang/prometheus#Histogram)
-   * [Java](https://github.com/prometheus/client_java#histogram)
-   * [Python](https://github.com/prometheus/client_python#histogram)
-   * [Ruby](https://github.com/prometheus/client_ruby#histogram)
+Acquisition modality devices and workstations can transfer images directly to DICOM Store via the DICOMWeb or classic DICOM interfaces. Alternatively, images can be forwarded to the DICOM Store in the cloud via the DICOM Gateway.
 
-## Summary
+[![DICOM Connectivity](/assets/DicomStore.png)](/assets/DicomStore.png)
 
-Similar to a _histogram_, a _summary_ samples observations (usually things like
-request durations and response sizes). While it also provides a total count of
-observations and a sum of all observed values, it calculates configurable
-quantiles over a sliding time window.
+## Multi-tenancy
 
-A summary with a base metric name of `<basename>` exposes multiple time series
-during a scrape:
+Multi-tenancy securely segments user and image access through Object-Based-Access Control (OBAC), where the client can segregate resources by the organization and the users can access the appropriate organization.
 
-  * streaming **φ-quantiles** (0 ≤ φ ≤ 1) of observed events, exposed as `<basename>{quantile="<φ>"}`
-  * the **total sum** of all observed values, exposed as `<basename>_sum`
-  * the **count** of events that have been observed, exposed as `<basename>_count`
+## Security and privacy
 
-See [histograms and summaries](/docs/practices/histograms) for
-detailed explanations of φ-quantiles, summary usage, and differences
-to [histograms](#histogram).
+A core strength of HSDP, security is managed by integrating S3 Credentials Service into the DICOM Store to provide control and limit access to S3 buckets. In addition, whether
+its HIPAA in the US, ASIST in France, or GDPR in the EU, compliance validation is a crucial factor in HSDP’s comprehensive approach to privacy
 
-Client library usage documentation for summaries:
+## Encryption
 
-   * [Go](http://godoc.org/github.com/prometheus/client_golang/prometheus#Summary)
-   * [Java](https://github.com/prometheus/client_java#summary)
-   * [Python](https://github.com/prometheus/client_python#summary)
-   * [Ruby](https://github.com/prometheus/client_ruby#summary)
+Encryption is provided by using platform approved data storage services such as FHIR Store (HSDP CDR) and Object
+Store, with defined encryption policies.
+
+## Supported profiles
+
+Philips architects have carefully chosen to include the most commonly used sub-class image profiles. DICOM Store Service supports SOP classes for Generic Radiology,Mammography, Cardiology, Oncology, Ophthalmology and
+Pathology profiles. Future releases will add to this list.
+
