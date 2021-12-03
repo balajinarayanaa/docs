@@ -1,5 +1,5 @@
 ---
-title: Metric types
+title: Clinical Object Store
 sort_rank: 1
 ---
 
