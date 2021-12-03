@@ -4,7 +4,7 @@
 var anchor = document.querySelector("#routing-tree-container");
 var diameter = anchor.clientWidth;
 
-var color = "#e6522c";
+var color = "#0B5ED7";
 
 var tree = d3.layout.tree()
     .size([360, diameter / 2 - 120])

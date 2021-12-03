@@ -1,3 +1,14 @@
-    
+    <!-- Algolia Docsearch -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script type="text/javascript">
+      docsearch({
+        apiKey: '48ac0b7924908a1fd40b1cb18b402ba1',
+        indexName: 'prometheus',
+        inputSelector: '.searchbox',
+        // Search all pages that either are the latest or are not part of the versioned Prometheus docs subtrees.
+        algoliaOptions: { 'filters': 'include:true' },
+        debug: false // Set debug to true if you want to inspect the dropdown
+      });
+    </script>
   </body>
 </html>

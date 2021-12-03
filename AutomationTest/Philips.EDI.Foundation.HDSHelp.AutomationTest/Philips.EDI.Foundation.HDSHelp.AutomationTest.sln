@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Philips.EDI.Foundation.HDSHelp.AutomationTest", "Philips.EDI.Foundation.HDSHelp.AutomationTest.csproj", "{A56F7222-847C-412A-A555-7D1BD226F8FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A56F7222-847C-412A-A555-7D1BD226F8FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A56F7222-847C-412A-A555-7D1BD226F8FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A56F7222-847C-412A-A555-7D1BD226F8FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A56F7222-847C-412A-A555-7D1BD226F8FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7ED50050-9388-4342-9CE7-DC4FFF74C8F0}
+	EndGlobalSection
+EndGlobal

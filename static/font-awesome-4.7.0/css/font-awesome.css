@@ -2283,6 +2283,9 @@
 .fa-window-close-o:before {
   content: "\f2d4";
 }
+.fa-tools:before {
+  content: "\f7d9";
+}
 .fa-bandcamp:before {
   content: "\f2d5";
 }
@@ -2315,6 +2318,9 @@
 }
 .fa-meetup:before {
   content: "\f2e0";
+}
+.fa-users-cog:before{
+  content:"\f509"
 }
 .sr-only {
   position: absolute;

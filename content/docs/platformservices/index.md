@@ -1,5 +1,5 @@
 ---
 title: Platform Services
-sort_rank: 4
+sort_rank: 6
 nav_icon: server
 ---
