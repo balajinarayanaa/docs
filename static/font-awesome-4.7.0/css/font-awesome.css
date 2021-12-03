@@ -2319,6 +2319,9 @@
 .fa-meetup:before {
   content: "\f2e0";
 }
+.fa-users-cog:before{
+  content:"\f509"
+}
 .sr-only {
   position: absolute;
   width: 1px;
