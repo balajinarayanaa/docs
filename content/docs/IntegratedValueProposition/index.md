@@ -1,5 +1,5 @@
 ---
 title: Integrated Value Proposition
-sort_rank: 1
+sort_rank: 2
 nav_icon: line-chart
 ---
