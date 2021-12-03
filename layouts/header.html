@@ -13,20 +13,20 @@
 
     <link rel="alternate" type="application/atom+xml" title="Prometheus Blog » Feed" href="https://www.philips.com/a-w/research/blog.html">
 
-    <link rel="shortcut icon" href="/assets/favicons/philips_logo_96X96.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/philips_logo_96X96.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/philips_logo_96X96.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/philips_logo_96X96.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/philips_logo_96X96.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/philips_logo_96X96.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/philips_logo_96X96.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/philips_logo_96X96.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/philips_logo_96X96.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/philips_logo_96X96.png">
-    <link rel="icon" type="image/png" href="/assets/favicons/philips_logo_96X96.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/assets/favicons/philips_logo_96X96.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/assets/favicons/philips_logo_96X96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/assets/favicons/philips_logo_96X96.png" sizes="16x16">
+    <link rel="shortcut icon" href="/assets/philips_logo_96X96.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/philips_logo_96X96.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/philips_logo_96X96.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/philips_logo_96X96.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/philips_logo_96X96.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/philips_logo_96X96.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/philips_logo_96X96.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/philips_logo_96X96.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/philips_logo_96X96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/philips_logo_96X96.png">
+    <link rel="icon" type="image/png" href="/assets/philips_logo_96X96.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/philips_logo_96X96.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/assets/philips_logo_96X96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/assets/philips_logo_96X96.png" sizes="16x16">
     <link rel="manifest" href="/assets/favicons/android-chrome-manifest.json">
     <% if (c = @item[:repo_docs]) && c[:canonical_root] %><link rel="canonical" href="<%= @item.path.sub(c[:version_root], c[:canonical_root]) %>" /><% end %>
     <!-- Meta tag for indexing that enables faceted search in Algolia,
@@ -34,7 +34,7 @@
     <meta name="docsearch:prometheus-version" content="<%= @item[:repo_docs] && @item[:repo_docs][:name] || 'none' %>" />
     <meta name="docsearch:include" content="<%= (@item[:repo_docs].nil? || @item[:repo_docs][:name].include?('latest')) && 'true' || 'false' %>" />
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="/assets/favicons/philips_logo_96X96.png">
+    <meta name="msapplication-TileImage" content="/assets/philips_logo_96X96.png">
     <meta name="theme-color" content="#ffffff">
 
     <% if @item[:title] %>
