@@ -1,9 +1,9 @@
 ---
-title: Data model
+title: Workflow
 sort_rank: 3
 ---
 
-# Data model
+# Workflow
 
 Prometheus fundamentally stores all data as [_time
 series_](http://en.wikipedia.org/wiki/Time_series): streams of timestamped
