@@ -2,7 +2,7 @@
 title: Media
 sort_rank: 8
 ---
-
+<!-- 
 # Media
 
 There is a [subreddit](https://www.reddit.com/r/prometheusmonitoring)
@@ -57,3 +57,4 @@ contains a more comprehensive community-maintained list of resources.
 
 * [Better Monitoring for Python](http://www.slideshare.net/brianbrazil/better-monitoring-for-python-inclusive-monitoring-with-prometheus-pycon-ireland-lightning-talk) – Brian Brazil at Pycon Ireland.
 * [Monitoring your Python with Prometheus](http://www.slideshare.net/brianbrazil/python-ireland-monitoring-your-python-with-prometheus) – Brian Brazil at Python Ireland Meetup, Dublin.
+ -->

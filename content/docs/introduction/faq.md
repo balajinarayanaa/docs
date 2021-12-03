@@ -8,7 +8,7 @@ toc: full-width
 
 ## General
 
-### What is Prometheus?
+<!-- ### What is Prometheus?
 
 Prometheus is an open-source systems monitoring and alerting toolkit
 with an active ecosystem. See the [overview](/docs/introduction/overview/).
@@ -234,3 +234,4 @@ The components currently supporting TLS and authentication are:
 This applies only to inbound connections. Prometheus does support
 [scraping TLS- and auth-enabled targets](/docs/prometheus/latest/configuration/configuration/#scrape_config), and other
 Prometheus components that create outbound connections have similar support.
+ -->

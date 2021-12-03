@@ -4,7 +4,7 @@ sort_rank: 7
 ---
 
 # Design documents
-
+<!-- 
 When contributing large changes or features to the Prometheus ecosystem, design
 documents are written by individuals or groups. Those documents are proposed for
 review and approval to the community.
@@ -58,3 +58,4 @@ collective thoughts, not as anything concrete or specific.
 | [Thoughts about timestamps and durations in PromQL]() | 2020-10 |
 | [Prometheus, OpenMetrics & OTLP](https://docs.google.com/document/d/1hn-u6WKLHxIsqYT1_u6eh94lyQeXrFaAouMshJcQFXs) | 2021-03 |
 | [Prometheus Sparse Histograms and PromQL](https://docs.google.com/document/d/1ch6ru8GKg03N02jRjYriurt-CZqUVY09evPg6yKTA1s/edit) | 2021-10 |
+ -->

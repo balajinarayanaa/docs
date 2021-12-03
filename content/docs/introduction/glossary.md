@@ -5,7 +5,7 @@ sort_rank: 9
 
 # Glossary
 
-
+<!-- 
 ### Alert
 
 An alert is the outcome of an alerting rule in Prometheus that is
@@ -122,3 +122,4 @@ being included in notifications.
 
 A target is the definition of an object to scrape. For example, what labels to apply, any authentication required to connect, or other information that defines how the scrape will occur.
 
+ -->
