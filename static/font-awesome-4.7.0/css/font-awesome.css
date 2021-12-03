@@ -2283,6 +2283,9 @@
 .fa-window-close-o:before {
   content: "\f2d4";
 }
+.fa-tools:before {
+  content: "\f7d9";
+}
 .fa-bandcamp:before {
   content: "\f2d5";
 }
