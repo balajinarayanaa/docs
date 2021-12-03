@@ -5,7 +5,7 @@ sort_rank: 6
 
 # Roadmap
 
-The following is only a selection of some of the major features we plan to
+<!-- The following is only a selection of some of the major features we plan to
 implement in the near future. To get a more complete overview of planned
 features and current work, see the issue trackers for the various repositories,
 for example, the [Prometheus
@@ -40,3 +40,4 @@ reverse proxy to add those features externally.
 Prometheus has a range of client libraries and exporters. There are always more
 languages that could be supported, or systems that would be useful to export
 metrics from. We will support the ecosystem in creating and expanding these.
+ -->
