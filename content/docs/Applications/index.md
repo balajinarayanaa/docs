@@ -1,5 +1,5 @@
 ---
 title: Applications
-sort_rank: 1
+sort_rank: 2
 nav_icon: hand-o-right
 ---
