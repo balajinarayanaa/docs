@@ -1,6 +1,6 @@
 ---
 title: Metric types
-sort_rank: 2
+sort_rank: 1
 ---
 
 # Metric types

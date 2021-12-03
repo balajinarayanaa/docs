@@ -1,6 +1,6 @@
 ---
 title: Data model
-sort_rank: 1
+sort_rank: 3
 ---
 
 # Data model

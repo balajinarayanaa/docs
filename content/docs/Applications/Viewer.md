@@ -1,6 +1,6 @@
 ---
 title: Jobs and instances
-sort_rank: 3
+sort_rank: 2
 ---
 
 # Jobs and instances
