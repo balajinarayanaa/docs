@@ -1,9 +1,9 @@
 ---
-title: Clinical Object Store
+title: Dicom Store
 sort_rank: 1
 ---
 
-# Philips Dicom Store
+# Dicom Store
 
 DICOM Store allows you to:
 
