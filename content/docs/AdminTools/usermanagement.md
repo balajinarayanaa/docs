@@ -6,7 +6,7 @@ nav_icon: flask
 
 # User Management
 
-User Management is a awesome tool shall enable tenant user administration by tenant administrators or Philips service on their behalf.
+User Management is a greatest tool shall enable tenant user administration by tenant administrators or Philips service on their behalf.
 
 User management UI enables you to access and configure HSDP IAM in a user friendly way. You can create and manage users and groups, and use roles and permissions to allow and deny their access to features or actions.
 
