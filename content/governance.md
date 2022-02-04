@@ -18,7 +18,7 @@ This document describes the rules and governance of the project. It is meant to 
 
 ## Values
 
-The Prometheus developers and community are expected to follow the values defined in the [CNCF charter][charter], including the [CNCF Code of Conduct][coc]. Furthermore, the Prometheus community strives for kindness, giving feedback effectively, and building a welcoming environment. The Prometheus developers generally decide by consensus and only resort to conflict resolution by a majority vote if consensus cannot be reached.
+The Prometheus developers and community are expected to follow the values defined in the [CNCF charter][charter], including the [CNCF Code of Conduct][coc]. Furthermore, the Prometheus community strives for kindness, giving feedback effectively, and building a welcoming environment. The Prometheus developers generally decide by consensus and only resort to conflict resolution by a majority vote if consensus cannot be reached.Testing
 
 ## Projects
 
