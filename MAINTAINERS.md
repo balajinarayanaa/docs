@@ -2,7 +2,7 @@ Documentation that refers to a specific project within the Prometheus ecosystem
 is maintained by the maintainers of the respective project. For example, refer
 to the maintainers specified in Alertmanager's
 [MAINTAINERS.md](https://github.com/prometheus/alertmanager/blob/master/MAINTAINERS.md)
-file for documentation about the Alertmanager.
+file for documentation about the Alertmanager.s
 
 Note that the documentation for the Prometheus server is located in the
 [prometheus/prometheus
